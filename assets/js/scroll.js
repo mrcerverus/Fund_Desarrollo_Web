@@ -11,3 +11,9 @@ buttons.forEach((button) => {
         });
     });
 });
+
+// Código jQuery (Tooltip)
+type="text/javascript">
+$(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+}); 
