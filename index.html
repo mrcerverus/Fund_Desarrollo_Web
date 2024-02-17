@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Iconos Fontawesome -->
+    <script src="https://kit.fontawesome.com/65c7c19306.js" crossorigin="anonymous"></script>
+    <!--Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de navegacion fija - smooth scroll  -->
+    <!-- Barra de navegacion Bootstrap tipo NAV, recurso utilizado "Sticky-top"-->
+    <!-- Js smooth scroll 'a'  -->
+
+    <div id="navegador" class="container-fluid sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand text-light" href="#"><img class="logotipo" src="assets/img/viajes.svg"
+                        alt="Viajes">
+                    Viajes Chile</a>
+                    
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#section-01">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#section-02">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#section-03">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#section-04">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Carousel - imagenes destacadas -->
+    <!-- Js Bootstrap, carrusel -->
+
+    <header id="section-01">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100 carrusel-imagenes" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100 carrusel-imagenes" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100 carrusel-imagenes" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Section Presentacion - Favicon - 3 parrafos - desaparece en tamano celular -->
+    <!-- Bootstrap: card, ademas de un contenedor principal. Seccion desaparece en tamano celular por clase -->
+
+    <article id="section-02" class="container d-none d-md-block mt-5 p-3">
+        <section class="container-fluid text-center p-3">
+            <h2>¿Quiénes Somos?</h2>
+            <hr>
+        </section>
+        <div class="row">
+
+            <div class="col-4 text-center">
+                <div class="card h-100">
+                    <div class="card-header bg-info">
+                        <i class="fa-solid fa-plane text-light icono"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec eu imperdiet sem. Phasellus consequat magna mi, vitae porta mi pulvinar eu.
+                            Praesent et odio molestie, aliquet dolor ut, semper leo. Donec leo felis, posuere
+                            in sagittis ut, blandit in velit. Sed sollicitudin fringilla augue, nec lacinia
+                            est pharetra at. In cursus sodales metus non dictum. Nunc at convallis massa, in tincidunt
+                            ipsum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 text-center">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec eu imperdiet sem. Phasellus consequat magna mi, vitae porta mi pulvinar eu.
+                            Praesent et odio molestie, aliquet dolor ut, semper leo. Donec leo felis, posuere
+                            in sagittis ut, blandit in velit. Sed sollicitudin fringilla augue, nec lacinia
+                            est pharetra at. In cursus sodales metus non dictum. Nunc at convallis massa, in tincidunt
+                            ipsum.</p>
+                    </div>
+                    <div class="card-header bg-info">
+                        <i class="fa-solid fa-mountain-sun text-light icono"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 text-center">
+                <div class="card h-100">
+                    <div class="card-header bg-info">
+                        <i class="fa-solid fa-route text-light icono"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec eu imperdiet sem. Phasellus consequat magna mi, vitae porta mi pulvinar eu.
+                            Praesent et odio molestie, aliquet dolor ut, semper leo. Donec leo felis, posuere
+                            in sagittis ut, blandit in velit. Sed sollicitudin fringilla augue, nec lacinia
+                            est pharetra at. In cursus sodales metus non dictum. Nunc at convallis massa, in tincidunt
+                            ipsum.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+
+    <!-- Destacados - 4 CARDS -->
+    <!-- Bootstrap: Se usa contenedor y Cards para el manejo de destacados -->
+
+    <main id="section-03" class="container">
+        <article class="text-center p-3 mt-4">
+            <h3>DESTACADOS</h3>
+            <hr>
+        </article>
+        <section class="container p-3">
+            <div class="row row-cols-1 row-cols-sm-4">
+
+                <div class="col col-sm-3 p-2">
+                    <div class="card h-100">
+                        <img src="assets/img/card1.jpg" class="card-img card-imagen" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+                                imperdiet sem.
+                                Phasellus consequat magna mi, vitae porta mi pulvinar eu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-3 p-2">
+                    <div class="card h-100">
+                        <img src="assets/img/card2.jpg" class="card-img card-imagen" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+                                imperdiet sem.
+                                Phasellus consequat magna mi, vitae porta mi pulvinar eu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-3 p-2">
+                    <div class="card h-100">
+                        <img src="assets/img/card3.jpg" class="card-img card-imagen" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+                                imperdiet sem.
+                                Phasellus consequat magna mi, vitae porta mi pulvinar eu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-3 p-2">
+                    <div class="card h-100">
+                        <img src="assets/img/card4.jpg" class="card-img card-imagen" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+                                imperdiet sem.
+                                Phasellus consequat magna mi, vitae porta mi pulvinar eu</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Formulario Contacto -->
+    <!-- Bootstrap, formulario base con botonera de toolkit -->
+
+    <section id="section-04" class="container mt-4 bg-dark text-light">
+        <article class="text-center p-3">
+            <h3>Contacto</h3>
+            <hr>
+        </article>
+        <div class="container p-5 mt-2">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <!-- Js Bootstrap tooltip -->
+            <button type="submit" class="btn btn-light"data-bs-toggle="tooltip" 
+            data-bs-placement="bottom" data-bs-title="Enviar Correo Electronico"
+            >Enviar</button>
+        </div>
+    </section>
+
+    <!-- Footer links redes sociales -->
+    <!-- Boostrap, modelo de footer con contenedor y columnas -->
+
+    <footer>
+        <div class="container text-light bg-info">
+
+            <div class="row text-center p-3 mt-4">
+                <div class="col">
+                    <a href="">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                </div>    
+                <div class="col">
+                    <a href="">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>    
+                </div>
+                <div class="col">
+                    <a href="">
+                        <i class="fa-brands fa-tiktok fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row text-center p-3">
+                <div class="col">
+                    <a class="navbar-brand" href="#section-01"><img class="logotipo" src="assets/img/viajes.svg" alt="Viajes">
+                        Viajes Chile</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/scroll.js"></script>
+
+
+    <!-- Código jQuery (Tooltip) -->
+    <script 
+        type="text/javascript">
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        }); 
+    </script>
+
+</body>
+
+</html>
